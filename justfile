@@ -44,6 +44,13 @@ bootstrap-tokens *ARGS:
 bootstrap-tokens-dev *ARGS:
     doppler run --project testnet-testsuite --config dev -- pnpm bootstrap:tokens:local {{ARGS}}
 
+# --- codegen ----------------------------------------------------------------------
+
+# regenerate program SDKs from the IDLs in crates/sdks/*/idl (codama)
+gen-sdks:
+    cd codegen && pnpm install && pnpm run generate
+    cargo fmt --all
+
 # --- ops ------------------------------------------------------------------------
 
 install-tools:
