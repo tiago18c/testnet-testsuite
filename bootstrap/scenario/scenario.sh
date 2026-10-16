@@ -12,7 +12,7 @@
 #   scenario.sh measure NAME SECONDS [local|testnet] snapshot → sample load → snapshot → report
 #                                       into .scenario/runs/NAME-{t0,t1,load,report}.json
 #
-# SCENARIO_SCALE=x10|x100|assets|x200|x500|x1000|x2000 layers config/scale-<scale>.toml (generated
+# SCENARIO_SCALE=x10|x100|assets|x200|x500|x750|x1000|x2000 layers config/scale-<scale>.toml (generated
 # by scale.py) over the profile; SCENARIO_TOKENS_CONFIG picks the token
 # bootstrap config (the asset scale uses bootstrap/scenario/tokens-assets.json).
 #   scenario.sh down                    stop every service started by `up`/`observe`
